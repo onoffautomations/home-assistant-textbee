@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect TextBee",
+        "description": "Paste your TextBee API key. We'll auto-discover your devices.",
+        "data": {
+          "api_key": "API Key",
+          "base_url": "API Base URL",
+          "name": "Name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to TextBee API.",
+      "invalid_auth": "Invalid API key."
+    },
+    "abort": {
+      "already_configured": "This API key is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TextBee Options",
+        "description": "Set friendly names and choose a default device for sending messages."
+      }
+    }
+  }
+}
