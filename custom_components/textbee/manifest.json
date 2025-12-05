@@ -1,0 +1,17 @@
+{
+  "domain": "textbee",
+  "name": "TextBee",
+  "version": "0.4.0",
+  "documentation": "https://textbee.dev",
+  "issue_tracker": "https://github.com/onoffautomations/home-assistant-textbee",
+  "codeowners": [
+    "@onoffautomations"
+  ],
+  "config_flow": true,
+  "iot_class": "cloud_push",
+  "requirements": [],
+  "loggers": [
+    "textbee"
+  ],
+  "manufacturer": "OnOff Automations"
+}

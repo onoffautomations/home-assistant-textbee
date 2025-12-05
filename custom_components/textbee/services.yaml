@@ -1,0 +1,46 @@
+send_message:
+  name: Send TextBee Message
+  description: >
+    Send an SMS or (if supported by your device/app) picture text via TextBee.
+    Supports single or multiple recipients (comma-separated) and optional media URLs.
+  fields:
+    device:
+      name: TextBee Device (HA)
+      description: >
+        Optional Home Assistant device to send from. Overrides the default device if set.
+      required: false
+      selector:
+        device:
+          integration: textbee
+    device_id:
+      name: TextBee Device ID (override)
+      description: >
+        Optional raw TextBee device ID. If provided, this overrides the HA device selector
+        and the default device.
+      required: false
+      selector:
+        text: {}
+    recipients:
+      name: Recipients
+      description: >
+        Phone number(s). Single number or multiple separated by commas,
+        e.g. +18451234567,+17189998888
+      required: true
+      selector:
+        text: {}
+    message:
+      name: Message
+      description: "Text content."
+      required: true
+      selector:
+        text:
+          multiline: true
+    media_urls:
+      name: Media URLs (optional)
+      description: >
+        Optional image/media URLs. Single or multiple separated by commas,
+        e.g. https://.../1.jpg,https://.../2.png.
+      required: false
+      selector:
+        text:
+          multiline: true
