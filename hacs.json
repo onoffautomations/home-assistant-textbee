@@ -1,7 +1,7 @@
 {
   "name": "TextBee Home Assistant Integration",
-  "domains": ["textbee"],
-  "country": "US",
+  "zip_release": true,
+  "filename": "textbee.zip",
   "homeassistant": "2023.8.0",
   "render_readme": true
 }
