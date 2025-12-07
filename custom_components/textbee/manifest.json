@@ -4,12 +4,12 @@
   "codeowners": ["@onoffautomations"],
   "config_flow": true,
   "documentation": "https://textbee.dev",
-  "iot_class": "cloud_push"
+  "iot_class": "cloud_push",
   "issue_tracker": "https://github.com/onoffautomations/home-assistant-textbee",
   "loggers": [
     "textbee"
   ],
-  "manufacturer": "OnOff Automations"
+  "manufacturer": "OnOff Automations",
   "requirements": [],
   "version": "0.4.0"
 }
